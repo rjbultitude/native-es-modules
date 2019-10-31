@@ -5,14 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "http-server -c-1",
+    "build": "rollup -c",
     "test": "test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash.times": "^4.3.2"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "rollup": "^1.26.2"
   }
 }
