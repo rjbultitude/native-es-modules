@@ -1,4 +1,4 @@
-# ES6 modules
+# Native ES Modules Demo
 
 ## Setup
 Install the dependancies `npm install`
