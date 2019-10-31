@@ -1,4 +1,4 @@
-import times from 'lodash.times';
+import times from 'lodash/times';
 import randomNumber from './random-number.mjs';
 
 function getArrayOfRandomNums() {

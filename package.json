@@ -5,16 +5,20 @@
   "main": "app.js",
   "scripts": {
     "start": "http-server -c-1",
-    "build": "rollup -c",
+    "build": "rollup -c ",
     "test": "test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.15",
     "lodash.times": "^4.3.2"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
-    "rollup": "^1.26.2"
+    "path": "^0.12.7",
+    "rollup": "^1.26.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
