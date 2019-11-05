@@ -49,3 +49,4 @@ Desktop.ini
 .env
 /dist
 /build
+/web_modules
