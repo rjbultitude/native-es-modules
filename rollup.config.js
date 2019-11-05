@@ -1,5 +1,6 @@
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
+import del from 'rollup-plugin-delete';
 import path from 'path';
 
 export default {
@@ -20,7 +21,10 @@ export default {
         // non-CommonJS modules will be ignored, but you can also
         // specifically include/exclude files
         include: 'node_modules/**',  // Default: undefined
-        })
+    }),
+    del({
+        targets:'build/*',
+    })
     ],
     manualChunks(id) {
         const hasId = id.includes('node_modules');
