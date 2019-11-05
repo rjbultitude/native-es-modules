@@ -24,8 +24,6 @@ export default {
     ],
     manualChunks(id) {
         const hasId = id.includes('node_modules');
-        console.log('module id', id);
-        console.log('hasId', hasId);
         if (hasId) {
             // Return the directory name following the last `node_modules`.
             // Usually this is the package, but it could also be the scope.
