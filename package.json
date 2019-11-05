@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "http-server -c-1",
+    "watch": "npm run start & rollup -c --watch",
     "build": "rollup -c ",
     "test": "test"
   },
