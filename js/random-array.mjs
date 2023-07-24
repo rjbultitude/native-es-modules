@@ -1,11 +1,14 @@
-import times from 'lodash/times';
+import times from '/node_modules/lodash-es/times.js';
 import randomNumber from './random-number.mjs';
 
 function getArrayOfRandomNums() {
-    console.log('random', randomNumber(0, 20));
-    return times(5, () => {
-        return randomNumber(0, 20);
+    const rndmNum = randomNumber(0, 20);
+    let rndmNumArry;
+    rndmNumArry = times(5, () => {
+        return rndmNum;
     });
+    console.log('rndmNumArry', rndmNumArry);
+    return rndmNumArry;
 }
 
 export default getArrayOfRandomNums;
